@@ -696,13 +696,28 @@ footer{
   display: flex;
   align-items: center;
   
-  
-  
-  
-  
+   
 }
 
-.steps-order{
+/* Used chat GPT to make it ordered list  */
+
+.steps ol{
+  counter-reset: step-counter;
+  list-style-type: none;
+}
+
+.steps li::before {
+  counter-increment: step-counter;
+  content: "Step " counter(step-counter) " "; 
+  text-transform: uppercase;
+  color: var(--heading-color);
+  writing-mode: vertical-lr;
+  rotate: 180deg;
+  padding:10px 0 10px 10px;
+
+}
+
+/* .steps-order{
   text-transform: uppercase;
   color: var(--heading-color);
   writing-mode: vertical-lr;
@@ -711,7 +726,7 @@ footer{
   
   
     
-}
+} */
 
 .tips{
   grid-column: 10/span 2;
