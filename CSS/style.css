@@ -44,11 +44,13 @@
     height: auto;
     width:var(--width-full);
     font-family:"Andika", sans-serif;
-    padding-bottom: 100px;
+    padding-bottom: 100px;}
+   
+       
+    
+
+    
   
-    
-    
-  }
   .navigation_bar{
     width: var(--width-full);
     background-color: var(--menu-bar-color);
@@ -84,13 +86,14 @@
     
     
   }
-  .mobile_look{ display:none;
+  .mobile_look{ 
+    display:none;
     grid-column-start: -1;
     color: var(--heading-color);
     margin-right:20px ;
     font-size: 18px;
     padding: 20px 0;
-    
+  
 
 }
 
@@ -157,6 +160,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     height:680px;  
+   
+    
+    
+    
   
 }
 
@@ -261,6 +268,7 @@
   max-width: var(--width-12col);
   margin: 70px auto 0 auto;
   
+  
   /* text-shadow: 1px 1px 1px var(--heading-color) */
   }
   .recipes_content{
@@ -270,6 +278,7 @@
     grid-template-rows: auto;
     gap: var(--grid-gap);
     max-width: var(--width-12col);
+    
     
     
      
@@ -283,7 +292,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr ;
     grid-template-rows: 50% 30% 20%;
-    padding: var(--padding-default)
+    padding: var(--padding-default);
+    
+    
 
 
   }
